@@ -19,48 +19,9 @@ public class Areadora {
         this.altura=h;
         this.radio=r;  
         }
-
-   
-     
-    public double getLado() {
-        return lado;
-    }
-    public void setLado(double lado) {
-        this.lado=lado;
-    }
-    public double getBase() {
-        return base;
-    }
-    public void setBase(double base) {
-        this.base=base;
-    }
-    public double getAltura() {
-        return altura;
-    }
-    public void setAltura(double altura) {
-        this.altura=altura;
-    }
-      
-    public double getRadio() {
-        return radio;
-    }
-    public void setRadio(double radio) {
-        this.radio=radio;
-    }
-   
-    
-    
-    
-    public double pedirDato(String a){
-        String respuesta = JOptionPane.showInputDialog("Introduce " + a + " dato");
-        double b = Double.parseDouble(respuesta);
-        return b;
-    }
-    
-    
-    public void seleccionOpcion(){
+        public void seleccionOpcion(){
         String opcion; 
-        opcion=JOptionPane.showInputDialog("Selecciona figura");
+        opcion=JOptionPane.showInputDialog("Selecciona figura:\n cadrado\n triángulo\n circulo");
         switch(opcion){
         case "cadrado":
             String dato=JOptionPane.showInputDialog("introduce lado");
